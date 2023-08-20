@@ -84,6 +84,26 @@ header {
   background-color: #cccccc;
 }
 
+#botaocabecalho {
+  background-color: #f1f1f1 !important;
+  border: 1px rgb(0, 0, 0) solid !important;
+  color: rgb(0, 0, 0) !important;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.dropdown-item {
+  font-size: 20px;
+  color: black !important;
+
+}
+
+.dropdown-item:hover {
+  background-color: #a7a7a7 !important;
+}
+
 @font-face {
   font-family: 'viavale';
   src: url('/fontes/big_noodle_titling_oblique.ttf') format('truetype');
@@ -395,3 +415,40 @@ figcaption {
   margin-top: 7px;
   margin-bottom: 70px;
 }
+
+/* ----- RESPONSIVIDADE ------- */
+
+@media (max-width: 1305px) {
+  .menu {
+    gap: 60px
+  }
+  #contato {
+    display: none;
+  }
+}
+
+@media (max-width: 1060px){
+  .menu li {
+    display: none
+  }
+}
+
+@media (max-width: 980px){
+  .menu li {
+    display: none;
+  }
+}
+
+@media (max-width: 905px){
+  .sistema {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 1060px){
+  #dropdown {
+    display: none;
+  }
+}
+
