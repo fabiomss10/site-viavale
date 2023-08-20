@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/js/all.min.js"></script>
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+
+  <header id="cabecalho">
+    <div class="logo">
+      <span class="sistema" onclick="scrollToSection('carouselExampleIndicators')">Via Vale Sistemas</span> 
+      </div>
+    <ul class="menu">
+      <li onclick="scrollToSection('scroll1')" href="#">QUEM SOMOS</li>
+      <li onclick="scrollToSection('scroll2')" href="#">NOSSA EQUIPE</li>
+      <li onclick="scrollToSection('scroll3')" href="#">ENDEREÇO</li>
+      <li onclick="scrollToSection('scroll4')" href="#">NOSSOS SERVIÇOS</li>
+    </ul>
+    <div id="contato" onclick="scrollToSection('div5')">CONTATE-NOS</div>
+  </header>
+ 
+<!-- CARROSSEL -->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/imagens/banner1.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="/imagens/banner2.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="/imagens/banner3.png" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- COMEÇO DA PÁGINA -->
+  <div id="scroll1"></div>
+  <div class="linha" id="div1"></div>
+
+  <main>
+  <section id="quemsomos">
+    <h1 class="qm">QUEM SOMOS </h1><br>
+    <p class="texto">A equipe Via Vale Sistemas tem por função Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Rerum vel earum placeat praesentium quia nesciunt? Laboriosam commodi quidem vero illo fuga, iure consequatu Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Modi iste optio quidem nam, odit molestiae porro nostrum, nisi
+      explicabo libero non natus inventore quis ratione voluptatum reprehenderit dolorem id vero?</p><br>
+    <img class="imgqmsomos" src="/imagens/logo_vvs.png">
+  </section>
+
+
+<!-- NOSSA EQUIPE -->
+  <div id="scroll2"></div>
+  <div class="linha" id="div2"></div>
+
+  <section id="nossaequipe">
+    <p class="ne">NOSSA EQUIPE</p>
+    <div id="imagens">
+      <div class="fileira1">
+        <div class="person">
+          <img class="pessoa" id="p1" src="/imagens/pauloH.PNG">
+          <figcaption>Paulo Henrique</figcaption>
+        </div>
+        <div class="person">
+          <img class="pessoa" id="p2" src="/imagens/pauloS.PNG">
+          <figcaption>Paulo Sérgio</figcaption>
+        </div>
+        <div class="person">
+          <img class="pessoa" id="p3" src="/imagens/fabio2.png">
+          <figcaption>Fábio Matheus</figcaption>
+        </div>
+      </div>
+      <div class="linha2"></div>
+      <div class="fileira2">
+        <div class="person">
+          <img class="pessoa" id="p4" src="/imagens/pessoa.PNG">
+          <figcaption>Sócio 1</figcaption>
+        </div>
+        <div class="person">
+          <img class="pessoa" id="p5" src="/imagens/pessoa.PNG">
+          <figcaption>Sócio 2</figcaption>
+        </div>
+        <div class="person">
+          <img class="pessoa" id="p6" src="/imagens/pessoa.PNG">
+          <figcaption>Sócio 3</figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="scroll3"></div>
+  <div class="linha" id="div3"></div>
+
+  <section id="localizacao">
+    <span class="nossoendereco">ENDEREÇO<br><span class="rua"> 📌 R. Leopoldo Macedo, 349 - Ponte Alta, Aparecida - SP, 12570-000</span></span>
+    <div class="mapBox">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.934100160022!2d-45.23376085375232!3d-22.84192749306646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1691449181343!5m2!1spt-BR!2sbr"
+        width="1300" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+
+  <div id="scroll4"></div>
+  <div class="linha" id="div4"></div>
+
+  <section id="nossosservicos">
+    <span class="ns">NOSSOS SERVIÇOS</span>
+    <p class="subtitulo">VENDA DE SISTEMAS -</p>
+    <p class="textons">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, et ut fuga quasi veritatis,
+      incidunt, illum corrupti adipisci exercitationem id ducimus labore consequatur dolor numquam cumque magnam vero
+      molestias Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet commodi doloremque delectus, fuga,
+      facilis inventore eos id accusamus dolorem asperiores nihil libero non saepe repellendus optio et. Soluta,
+      consequuntur id!tenetur.</p>
+
+    <p class="subtitulo">CERTIFICAÇÃO DIGITAL -</p>
+    <p class="textons" id="textocerti">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit
+      amet consectetur, adipisicing elit. Repellendus aliquid nostrum, magni similique fugiat cum veniam tempora
+      repellat, voluptatem reiciendis sequi nesciunt earum quae? Facilis pariatur delectus laborum veniam esse.
+      Accusantium, facere quis quibusdam quas similique, omnis eius sint voluptas, odio dolorem fuga explicabo vitae
+      facilis repellat quam exercitationem repudiandae nihil soluta.</p>
+    <a id="certificacao" href="/html e css/certificacao.html" target="_blank">ACESSAR CERTIFICAÇÃO DIGITAL</a>
+
+
+    <p class="subtitulo">PVD MOBILE ( EM BREVE ) -</p>
+    <p class="textons">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque vel at molestiae a aspernatur?
+      Laudantium ipsum itaque dolorum voluptatibus nihil eos harum explicabo excepturi, officia modi, sit perspiciatis
+      accusamus odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quos quis, consequatur obcaecati id
+      labore corrupti, eius quo amet quam impedit corporis. Ducimus assumenda, dolore corporis et quis laboriosam sunt?
+    </p>
+  </section>
+
+</main>
+
+  <div id="scroll5"></div>
+  <div class="linha" id="div5"></div>
+
+  <span id="email">ENTRE EM CONTATO</span>
+
+  <div class="ctt">
+    <div class="clique"> 💻 <div class="email">Email</div> : viavale@hotmail.com </div><br>
+    <div class="clique">📞 <div class="email">Telefone</div> : (12) 3600-5110</div>
+  </div>
+
+  <span id="redes">REDES SOCIAIS</span><br>
+  <span class="clique">CLIQUE PARA ACESSAR:</span>
+  <div class="btn_social">
+    <div class="icon">
+      <a id="face" href="#"><i class="fab fa-facebook"></i></a>
+      <a id="insta" href="https://www.instagram.com/viavalesistemas/" target="_blank"><i
+          class="fab fa-instagram"></i></a>
+      <a id="whats" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <div class="linha"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
