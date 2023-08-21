@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(236, 235, 235);
+  
 }
 
 /* ------- CABEÇALHO ---------- */
-
-body {
-  background-color: rgb(236, 235, 235);
-}
 
 header {
   display: flex;
@@ -112,33 +110,32 @@ header {
 /* ------- QUEM SOMOS --------- */
 
 #quemsomos {
-  margin-top: 100px;
-  margin-left: 20%;
+margin-top: 100px;
+align-items: center;
 }
 
 .qm {
-  text-align: left;
-  margin: 0;
+  text-align: center;
   font-family: 'viavale';
   font-size: 60px;
 }
 
 .texto {
-  margin-bottom: 50px;
-  margin-top: 0;
+  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 30px;
-  width: 700px;
-  float: left;
+  width: 70vw;
+  display: flex;
+  margin: 0 auto;
 }
 
-.imgqmsomos {
-  margin-left: 100px;
-  height: 350px;
-  margin-top: -55px;
-
+#imgqmsomos {
+  text-align: center;
 }
 
+#imgqmsomos img {
+  height: 300px;
+}
 /* ------ NOSSA EQUIPE ------ */
 
 #nossaequipe {
@@ -249,7 +246,7 @@ figcaption {
 .textons {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 30px;
-  width: 1200px;
+  width: 80vw;
   margin-top: -20px;
   margin: 0 auto;
 }
@@ -407,7 +404,7 @@ figcaption {
 }
 
 #div1 {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -437,6 +434,15 @@ figcaption {
   .menu li {
     display: none;
   }
+
+  #imgqmsomos img {
+    height: 70px;
+  }
+
+  .texto {
+    font-size: 13px;
+    text-align: left;
+  }
 }
 
 @media (max-width: 905px){
@@ -451,4 +457,3 @@ figcaption {
     display: none;
   }
 }
-
