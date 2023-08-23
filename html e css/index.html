@@ -13,37 +13,44 @@
 
 <body>
 
-<!-- CABEÇALHO -->
+  <!-- CABEÇALHO -->
 
   <header id="cabecalho">
     <div class="logo">
-      <span class="sistema" onclick="scrollToSection('carouselExampleIndicators')">Via Vale Sistemas</span> 
-      </div>
+      <h1 class="sistema" onclick="scrollToSection('carouselExampleIndicators')">
+        Via Vale Sistemas <img src="/imagens/logo_vvs.png" alt="logo">
+      </h1>
+    </div>
     <ul class="menu">
       <li onclick="scrollToSection('scroll1')" href="#">QUEM SOMOS</li>
       <li onclick="scrollToSection('scroll2')" href="#">NOSSA EQUIPE</li>
       <li onclick="scrollToSection('scroll3')" href="#">ENDEREÇO</li>
       <li onclick="scrollToSection('scroll4')" href="#">NOSSOS SERVIÇOS</li>
     </ul>
-    <div id="contato" onclick="scrollToSection('div5')" >CONTATE-NOS</div>
+    <div id="contato" onclick="scrollToSection('div5')">CONTATE-NOS</div>
 
-    <div id ="dropdown" class="btn-group">
-      <button type="button" id="botaocabecalho" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <div id="dropdown" class="btn-group">
+      <button type="button" id="botaocabecalho" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+        aria-expanded="false">
         ⚙️
       </button>
       <ul class="dropdown-menu dropdown-menu-end">
-        <li onclick="scrollToSection('scroll1')" href="#"><button class="dropdown-item" type="button">QUEM SOMOS</button></li>
-        <li onclick="scrollToSection('scroll2')" href="#"><button class="dropdown-item" type="button">NOSSA EQUIPE</button></li>
-        <li onclick="scrollToSection('scroll3')" href="#"><button class="dropdown-item" type="button">ENDEREÇO</button></li>
-        <li onclick="scrollToSection('scroll4')" href="#"><button class="dropdown-item" type="button">NOSSOS SERVIÇOS</button></li>
-        <li ><button class="dropdown-item" type="button">CONTATO</button></li>
+        <li onclick="scrollToSection('scroll1')" href="#"><button class="dropdown-item" type="button">QUEM
+            SOMOS</button></li>
+        <li onclick="scrollToSection('scroll2')" href="#"><button class="dropdown-item" type="button">NOSSA
+            EQUIPE</button></li>
+        <li onclick="scrollToSection('scroll3')" href="#"><button class="dropdown-item" type="button">ENDEREÇO</button>
+        </li>
+        <li onclick="scrollToSection('scroll4')" href="#"><button class="dropdown-item" type="button">NOSSOS
+            SERVIÇOS</button></li>
+        <li><button class="dropdown-item" type="button">CONTATO</button></li>
       </ul>
     </div>
     </div>
 
   </header>
- 
-<!-- CARROSSEL -->
+
+  <!-- CARROSSEL -->
 
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
@@ -77,144 +84,155 @@
     </button>
   </div>
 
-<!-- COMEÇO DA PÁGINA -->
+  <!-- COMEÇO DA PÁGINA -->
   <div id="scroll1"></div>
   <div class="linha" id="div1"></div>
 
   <main>
-  <section id="quemsomos">
-    <h1 class="qm">QUEM SOMOS </h1><br>
-    <p class="texto">Seja muito bem-vindo à nossa empresa, referência em otimização de negócios.<br> Desde nossa fundação, temos nos empenhado em simplificar e aprimorar a sua jornada empresarial. Especializados em sistemas de automatização, oferecemos soluções completas e práticas, incluindo venda de sistemas SAT, NFe e CFe, além de serviços de certificação digital para garantir a segurança das suas transações. Nossa missão é clara: impulsionar o seu sucesso por meio de eficiência, confiabilidade e resultados tangíveis. Ao escolher nossa parceria, você está optando por simplificar processos, maximizar resultados e trilhar um caminho empresarial mais promissor.</p><br>
+    <section id="quemsomos">
+      <h1 class="qm">QUEM SOMOS </h1><br>
+      <p class="texto">Seja muito bem-vindo à nossa empresa, referência em otimização de negócios.<br> Desde nossa
+        fundação, temos nos empenhado em simplificar e aprimorar a sua jornada empresarial. Especializados em sistemas
+        de automatização, oferecemos soluções completas e práticas, incluindo venda de sistemas SAT, NFe e CFe, além de
+        serviços de certificação digital para garantir a segurança das suas transações. Nossa missão é clara:
+        impulsionar o seu sucesso por meio de eficiência, confiabilidade e resultados tangíveis. Ao escolher nossa
+        parceria, você está optando por simplificar processos, maximizar resultados e trilhar um caminho empresarial
+        mais promissor.</p><br>
       <figure id="imgqmsomos">
-    <img src="\imagens\logo_vvs_2.png">
+        <img src="\imagens\logo_vvs_2.png">
       </figure>
-  </section>
+    </section>
 
 
-<!-- NOSSA EQUIPE -->
-  <div id="scroll2"></div>
-  <div class="linha" id="div2"></div>
+    <!-- NOSSA EQUIPE -->
+    <div id="scroll2"></div>
+    <div class="linha" id="div2"></div>
 
-  <section id="nossaequipe">
-  <p class="ne">NOSSA EQUIPE</p>
+    <section id="nossaequipe">
+      <p class="ne">NOSSA EQUIPE</p>
 
-    <div class="fileira1">
+      <div class="fileira1">
 
-      <div class="person">
-        <img class="pessoa" id="p1" src="/imagens/pauloH.PNG">
-        <figcaption>Paulo Henrique</figcaption>
+        <div class="person">
+          <img class="pessoa" id="p1" src="/imagens/pauloH.PNG">
+          <figcaption>Paulo Henrique</figcaption>
+        </div>
+
+        <div class="person">
+          <img class="pessoa" id="p2" src="/imagens/pauloS.PNG">
+          <figcaption>Paulo Sérgio</figcaption>
+        </div>
+
+        <div class="person">
+          <img class="pessoa" id="p3" src="/imagens/fabio2.png">
+          <figcaption>Fábio Matheus</figcaption>
+        </div>
+
       </div>
 
-      <div class="person">
-        <img class="pessoa" id="p2" src="/imagens/pauloS.PNG">
-        <figcaption>Paulo Sérgio</figcaption>
+
+
+      <div class="fileira2">
+
+        <div class="person">
+          <img class="pessoa" id="p4" src="/imagens/pessoa.PNG">
+          <figcaption>Sócio 1</figcaption>
+        </div>
+
+        <div class="person">
+          <img class="pessoa" id="p5" src="/imagens/pessoa.PNG">
+          <figcaption>Sócio 2</figcaption>
+        </div>
+
+        <div class="person">
+          <img class="pessoa" id="p6" src="/imagens/pessoa.PNG">
+          <figcaption>Sócio 3</figcaption>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="scroll3"></div>
+    <div class="linha" id="div3"></div>
+
+    <section id="localizacao">
+      <h1 class="nossoendereco">ENDEREÇO<br></h1><p class="rua"> 📌 R. Leopoldo Macedo, 349 -<br class="quebra">Ponte
+        Alta, Aparecida - SP, 12570-000</p>
+      <div class="mapBox">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.934100160022!2d-45.23376085375232!3d-22.84192749306646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1691449181343!5m2!1spt-BR!2sbr"
+          width="1300" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
       </div>
 
-      <div class="person">
-        <img class="pessoa" id="p3" src="/imagens/fabio2.png">
-        <figcaption>Fábio Matheus</figcaption>
+      <div class="mapBoxMedio">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.934100160022!2d-45.23376085375232!3d-22.84192749306646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1691449181343!5m2!1spt-BR!2sbr"
+          width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
       </div>
 
-    </div>
 
-    
+      <div class="mapBoxPequeno">
 
-    <div class="fileira2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.969446354634!2d-45.23465278873267!3d-22.84061987921542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1692746473366!5m2!1spt-BR!2sbr"
+          width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      <div class="person">
-        <img class="pessoa" id="p4" src="/imagens/pessoa.PNG">
-        <figcaption>Sócio 1</figcaption>
       </div>
 
-      <div class="person">
-        <img class="pessoa" id="p5" src="/imagens/pessoa.PNG">
-        <figcaption>Sócio 2</figcaption>
-      </div>
-
-      <div class="person">
-        <img class="pessoa" id="p6" src="/imagens/pessoa.PNG">
-        <figcaption>Sócio 3</figcaption>
-      </div>
-    </div>  
-  </section>
+    </section>
 
 
-  <div id="scroll3"></div>
-  <div class="linha" id="div3"></div>
+    <div id="scroll4"></div>
+    <div class="linha" id="div4"></div>
 
-  <section id="localizacao">
-    <h1 class="nossoendereco">ENDEREÇO<br></h1><span class="rua"> 📌 R. Leopoldo Macedo, 349 -<br class="quebra">Ponte Alta,  Aparecida - SP, 12570-000</span>
-    <div class="mapBox">
+    <section id="nossosservicos">
+      <span class="ns">NOSSOS SERVIÇOS</span>
+      <p class="subtitulo">VENDA DE SISTEMAS</p>
+      <p class="textons">Sistemas de Automatização Fiscal:
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.934100160022!2d-45.23376085375232!3d-22.84192749306646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1691449181343!5m2!1spt-BR!2sbr"
-        width="1300" height="750" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        SAT (Sistema Autenticador e Transmissor): Sabemos que cumprir as obrigações fiscais é uma parte fundamental de
+        qualquer negócio. Com nossa experiência em Sistemas SAT, garantimos que sua empresa esteja sempre em
+        conformidade, emitindo Cupons Fiscais Eletrônicos (CF-e-SAT) de forma precisa e eficiente.
 
-    </div>
+        NFe (Nota Fiscal Eletrônica) e CFe (Cupom Fiscal Eletrônico): Simplificar a emissão de documentos fiscais é
+        fundamental para um negócio bem-sucedido. Nossos sistemas para Notas Fiscais Eletrônicas e Cupons Fiscais
+        Eletrônicos garantem que suas transações sejam registradas com segurança e em conformidade com a legislação
+        vigente.</p>
 
-    <div class="mapBoxMedio">
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.934100160022!2d-45.23376085375232!3d-22.84192749306646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1691449181343!5m2!1spt-BR!2sbr"
-        width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
-
-
-    <div class="mapBoxPequeno">
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.969446354634!2d-45.23465278873267!3d-22.84061987921542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc4851fe439dd%3A0xa5a7026c34e7aa37!2sVIA%20VALE%20SISTEMAS%20CERTIFICADORA!5e0!3m2!1spt-BR!2sbr!4v1692746473366!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
-
-  </section>
+      <p class="subtitulo">CERTIFICAÇÃO DIGITAL</p>
+      <p class="textons" id="textocerti">Em um mundo digital, a segurança é primordial. Nossos serviços de certificação
+        digital oferecem autenticação robusta e confidencialidade para suas transações online. Seja na aquisição de
+        novos certificados ou na renovação dos existentes, nossa equipe experiente está pronta para garantir a segurança
+        de suas informações.</p>
+      <a id="certificacao" href="/html e css/certificacao.html" target="_blank">ACESSAR CERTIFICAÇÃO DIGITAL</a>
 
 
-  <div id="scroll4"></div>
-  <div class="linha" id="div4"></div>
+      <p class="subtitulo">PVD MOBILE (EM BREVE)</p>
+      <p class="textons">O PVD Mobile é a solução inovadora que combina a praticidade do ponto de venda com a liberdade
+        da mobilidade. Agora, você pode gerenciar suas transações de vendas de forma eficiente e fácil, onde quer que
+        esteja. Ele coloca o poder do PDV diretamente em suas mãos, eliminando as limitações dos sistemas convencionais.
+      </p>
+    </section>
 
-  <section id="nossosservicos">
-    <span class="ns">NOSSOS SERVIÇOS</span>
-    <p class="subtitulo">VENDA DE SISTEMAS -</p>
-    <p class="textons">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, et ut fuga quasi veritatis,
-      incidunt, illum corrupti adipisci exercitationem id ducimus labore consequatur dolor numquam cumque magnam vero
-      molestias Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet commodi doloremque delectus, fuga,
-      facilis inventore eos id accusamus dolorem asperiores nihil libero non saepe repellendus optio et. Soluta,
-      consequuntur id!tenetur.</p>
-
-    <p class="subtitulo">CERTIFICAÇÃO DIGITAL -</p>
-    <p class="textons" id="textocerti">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit
-      amet consectetur, adipisicing elit. Repellendus aliquid nostrum, magni similique fugiat cum veniam tempora
-      repellat, voluptatem reiciendis sequi nesciunt earum quae? Facilis pariatur delectus laborum veniam esse.
-      Accusantium, facere quis quibusdam quas similique, omnis eius sint voluptas, odio dolorem fuga explicabo vitae
-      facilis repellat quam exercitationem repudiandae nihil soluta.</p>
-    <a id="certificacao" href="/html e css/certificacao.html" target="_blank">ACESSAR CERTIFICAÇÃO DIGITAL</a>
-
-
-    <p class="subtitulo">PVD MOBILE ( EM BREVE ) -</p>
-    <p class="textons">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque vel at molestiae a aspernatur?
-      Laudantium ipsum itaque dolorum voluptatibus nihil eos harum explicabo excepturi, officia modi, sit perspiciatis
-      accusamus odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quos quis, consequatur obcaecati id
-      labore corrupti, eius quo amet quam impedit corporis. Ducimus assumenda, dolore corporis et quis laboriosam sunt?
-    </p>
-  </section>
-
-</main>
+  </main>
 
   <div id="scroll5"></div>
   <div class="linha" id="div5"></div>
 
-  <span id="email">ENTRE EM CONTATO</span>
+<div id="interacao">
+  <h1>ENTRE EM CONTATO</h1>
+  <p>📞 <span>TELEFONE:</span> (12) 3600-5110</p>
+  <p>💻 <span>EMAIL:</span> viavalesistemas@outlook.com</p>
+  <p id="redes"> REDES SOCIAIS</p>
+</div>
 
-  <div class="ctt">
-    <div class="clique"> 💻 <div class="email">Email</div> : viavale@hotmail.com </div><br>
-    <div class="clique">📞 <div class="email">Telefone</div> : (12) 3600-5110</div>
-  </div>
-
-  <span id="redes">REDES SOCIAIS</span><br>
-  <span class="clique">CLIQUE PARA ACESSAR:</span>
   <div class="btn_social">
     <div class="icon">
       <a id="face" href="#"><i class="fab fa-facebook"></i></a>
@@ -223,6 +241,7 @@
       <a id="whats" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
+
 
   <div class="linha"></div>
 
@@ -233,4 +252,7 @@
   <script src="/js/script.js"></script>
 </body>
 
+<footer>
+    <img src="\imagens\footer_logo_vvs_2.png">
+</footer>
 </html>
