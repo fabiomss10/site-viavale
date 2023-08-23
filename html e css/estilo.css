@@ -107,6 +107,10 @@ header {
   src: url('/fontes/big_noodle_titling_oblique.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'texto';
+  src: url('/fontes/Sansation_Light.ttf') format('truetype');
+}
 /* ------- QUEM SOMOS --------- */
 
 #quemsomos {
@@ -118,15 +122,18 @@ align-items: center;
   text-align: center;
   font-family: 'viavale';
   font-size: 60px;
+  margin-top: -20px;
 }
 
 .texto {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'texto';
+  font-weight: 300;
   font-size: 30px;
   width: 70vw;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 #imgqmsomos {
@@ -134,7 +141,8 @@ align-items: center;
 }
 
 #imgqmsomos img {
-  height: 300px;
+  height: 200px;
+  margin-bottom: 50px;
 }
 /* ------ NOSSA EQUIPE ------ */
 
@@ -163,17 +171,11 @@ align-items: center;
 
 .fileira1 {
   display: inline-flex;
+  margin-bottom: 50px;
 }
 
 .fileira2 {
   display: inline-flex;
-}
-
-.linha2 {
-  background-color: rgb(236, 235, 235);
-  ;
-  margin-top: 35px;
-  margin-bottom: 15px;
 }
 
 #p2 {
@@ -190,7 +192,6 @@ figcaption {
   font-size: 30px;
   font-family: 'viavale';
 }
-
 
 
 /* ---------- LOCALIZAÇÃO ----------- */
@@ -215,10 +216,39 @@ figcaption {
   border: solid 4px rgb(0, 0, 0);
   border-radius: 10px;
   margin-top: 50px;
+  display: none;
 }
 
-.nossoendereço {
-  padding-bottom: 100px;
+.mapBoxMedio {
+  width: 810px;
+  height: 560px;
+  background-color: rgb(194, 194, 194);
+  margin: 0 auto;
+  border: solid 4px rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 50px;
+  display: none;
+}
+
+.mapBoxPequeno {
+  width: 310px;
+  height: 210px;
+  background-color: rgb(194, 194, 194);
+  margin: 0 auto;
+  border: solid 4px rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-top: 50px;
+  display: none;
+}
+
+.nossoendereco {
+  font-size: 80px;
+}
+
+@media (min-width:980px){
+  .quebra {
+    display: none;
+  }
 }
 
 .rua {
@@ -386,26 +416,14 @@ figcaption {
   width: 70%;
   display: block;
   margin: 0 auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   clear: both;
-}
-
-#id1 {
-  margin-left: 380px;
-}
-
-#id2 {
-  margin-left: 50px;
-}
-
-#id3 {
-  margin-left: 40px;
 }
 
 #div1 {
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 #div2 {
@@ -415,6 +433,7 @@ figcaption {
 
 /* ----- RESPONSIVIDADE ------- */
 
+/* */
 @media (max-width: 1305px) {
   .menu {
     gap: 60px
@@ -424,27 +443,47 @@ figcaption {
   }
 }
 
+/* 
+- TIRA O MENU QUANDO TIVER MENOS DE 1060PX NA TELA
+- ARRUMA AS FOTOS DA "NOSSA EQUIPE"
+*/
 @media (max-width: 1060px){
   .menu li {
     display: none
   }
-}
 
-@media (max-width: 980px){
-  .menu li {
-    display: none;
+  .fileira1 {
+    flex-direction: column;
+    display: flex;
   }
 
+  .fileira2 {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #p2 , #p5 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+/* ARRUMA A IMAGEM DO "QUEM SOMOS" PARA TELA MENOS Q 1250PX */
+@media (max-width: 1250px){
   #imgqmsomos img {
     height: 70px;
   }
+}
 
+/* EM TELAS MENOR QUE 980PX O TEXTO DO "QUEM SOMOS" FICA MENOR */
+@media (max-width: 980px){
   .texto {
-    font-size: 13px;
-    text-align: left;
+    font-size: 16px; 
   }
 }
 
+/* TELAS MENORES QUE 905PX A ESCRITA NO CABEÇALHO FICA MENOR */
 @media (max-width: 905px){
   .sistema {
     font-size: 20px;
@@ -452,8 +491,40 @@ figcaption {
 }
 
 
+/* FERRAMENTA DO CABEÇALHO SÓ APARECE COM MENOS DE 1060PX*/
 @media (min-width: 1060px){
   #dropdown {
     display: none;
   }
 }
+
+/* ENDEREÇO RESPONSIVO */
+
+@media (max-width: 1400px) {
+  .rua {
+    font-size:30px ;
+  }
+}
+
+
+/* MAPA DO "LOCALIZAÇÃO" FICA MENOR*/
+
+@media (min-width: 1350px) {
+  .mapBox {
+      display: block;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1349px) {
+  .mapBoxMedio {
+      display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mapBoxPequeno {
+      display: block;
+  }
+}
+
+
