@@ -15,41 +15,41 @@
 
   <!-- CABEÇALHO -->
 
-  <header id="cabecalho">
-    <div class="logo">
-      <h1 class="sistema" onclick="scrollToSection('carouselExampleIndicators')">
-        Via Vale Sistemas <img src="/imagens/logo_vvs.png" alt="logo">
-      </h1>
-    </div>
-    <ul class="menu">
-      <li onclick="scrollToSection('scroll1')" href="#">QUEM SOMOS</li>
-      <li onclick="scrollToSection('scroll2')" href="#">NOSSA EQUIPE</li>
-      <li onclick="scrollToSection('scroll3')" href="#">ENDEREÇO</li>
-      <li onclick="scrollToSection('scroll4')" href="#">NOSSOS SERVIÇOS</li>
-    </ul>
-    <div id="contato" onclick="scrollToSection('div5')">CONTATE-NOS</div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">VIA VALE SISTEMAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a onclick="scrollToSection('scroll1')" class="nav-link active" aria-current="page" href="#">Quem
+                Somos</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scrollToSection('scroll2')" class="nav-link" href="#">Nossa Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scrollToSection('scroll3')" class="nav-link" href="#">Endereço</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="scrollToSection('scroll4')" class="nav-link" href="#">Nossos Serviços</a>
+            </li>
 
-    <div id="dropdown" class="btn-group">
-      <button type="button" id="botaocabecalho" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        ⚙️
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li onclick="scrollToSection('scroll1')" href="#"><button class="dropdown-item" type="button">QUEM
-            SOMOS</button></li>
-        <li onclick="scrollToSection('scroll2')" href="#"><button class="dropdown-item" type="button">NOSSA
-            EQUIPE</button></li>
-        <li onclick="scrollToSection('scroll3')" href="#"><button class="dropdown-item" type="button">ENDEREÇO</button>
-        </li>
-        <li onclick="scrollToSection('scroll4')" href="#"><button class="dropdown-item" type="button">NOSSOS
-            SERVIÇOS</button></li>
-        <li><button class="dropdown-item" type="button">CONTATO</button></li>
-      </ul>
-    </div>
-    </div>
-
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-
   <!-- CARROSSEL -->
 
   <div id="carouselExampleIndicators" class="carousel slide">
@@ -85,6 +85,7 @@
   </div>
 
   <!-- COMEÇO DA PÁGINA -->
+
   <div id="scroll1"></div>
   <div class="linha" id="div1"></div>
 
@@ -156,7 +157,8 @@
     <div class="linha" id="div3"></div>
 
     <section id="localizacao">
-      <h1 class="nossoendereco">ENDEREÇO<br></h1><p class="rua"> 📌 R. Leopoldo Macedo, 349 -<br class="quebra">Ponte
+      <h1 class="nossoendereco">ENDEREÇO<br></h1>
+      <p class="rua"> 📌 R. Leopoldo Macedo, 349 -<br class="quebra">Ponte
         Alta, Aparecida - SP, 12570-000</p>
       <div class="mapBox">
 
@@ -226,12 +228,12 @@
   <div id="scroll5"></div>
   <div class="linha" id="div5"></div>
 
-<div id="interacao">
-  <h1>ENTRE EM CONTATO</h1>
-  <p>📞 <span>TELEFONE:</span> (12) 3600-5110</p>
-  <p>💻 <span>EMAIL:</span> viavalesistemas@outlook.com</p>
-  <p id="redes"> REDES SOCIAIS</p>
-</div>
+  <div id="interacao">
+    <h1>ENTRE EM CONTATO</h1>
+    <p>📞 <span>TELEFONE:</span> (12) 3600-5110</p>
+    <p>💻 <span>EMAIL:</span> viavalesistemas@outlook.com</p>
+    <p id="redes"> REDES SOCIAIS</p>
+  </div>
 
   <div class="btn_social">
     <div class="icon">
@@ -253,6 +255,7 @@
 </body>
 
 <footer>
-    <img src="\imagens\footer_logo_vvs_2.png">
+  <img src="\imagens\footer_logo_vvs_2.png">
 </footer>
+
 </html>

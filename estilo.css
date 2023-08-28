@@ -6,20 +6,18 @@ body {
 }
 
 /* ------- CABEÇALHO ---------- */
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2c3c4c;
-  padding: 10px;
-  height: 80px;
   font-family: 'viavale';
+  font-size: 30px;
   position: sticky;
   top: 0;
-  border: 2px solid black;
+  border: 1px solid black;
   z-index: 100;
-  margin-bottom: 5px;
+  text-align: center !important;
+}
+
+.navbar-brand {
+  font-size: 30px !important;
 }
 
 #carouselExampleIndicators {
@@ -27,89 +25,9 @@ header {
   margin: 0 auto;
   border: #000000 solid 5px;
   border-radius: 20px;
+  margin-top: 3px;
 }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 100px;
-  padding-right: 155px;
-  margin: 0;
-}
-
-.menu li {
-  margin: 0;
-  padding: 0;
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-}
-
-.menu li:hover {
-  color: #aaa6a6;
-
-  cursor: pointer;
-}
-
-.sistema {
-  float: left;
-  font-size: 30px;
-  color: #f0f0f0;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.sistema:hover {
-  color: #aaa6a6;
-}
-
-
-.logo {
-  margin-left: 30px;
-  display: flex;
-}
-
-
-
-.logo img {
-  height: 6vh;
-  margin: 0 auto;
-}
-
-#contato {
-  margin-right: 20px;
-  background-color: #ffffff;
-  color: #000000;
-  font-family: 'viavale';
-  font-size: 25px;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 1px 5px;
-}
-
-#contato:hover {
-  background-color: #cccccc;
-}
-
-#botaocabecalho {
-  background-color: #f1f1f1 !important;
-  border: 1px rgb(0, 0, 0) solid !important;
-  color: rgb(0, 0, 0) !important;
-  font-family: sans-serif;
-  font-size: 20px;
-  padding: 5px;
-  font-weight: bolder;
-}
-
-.dropdown-item {
-  font-size: 20px;
-  color: black !important;
-
-}
-
-.dropdown-item:hover {
-  background-color: #a7a7a7 !important;
-}
 
 @font-face {
   font-family: 'viavale';
