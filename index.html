@@ -15,10 +15,10 @@
 
   <!-- CABEÇALHO -->
 
-  <header>
+  <header id="cabecalho">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">VIA VALE SISTEMAS</a>
+        <a class="navbar-brand" onclick="scrollToSection('cabecalho')">VIA VALE SISTEMAS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,17 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a onclick="scrollToSection('scroll1')" class="nav-link" aria-current="page">Quem
-                Somos</a>
+              <a onclick="scrollToSection('scroll1')" class="nav-link" aria-current="page">QUEM SOMOS</a>
             </li>
             <li class="nav-item">
-              <a onclick="scrollToSection('scroll2')" class="nav-link">Nossa Equipe</a>
+              <a onclick="scrollToSection('scroll2')" class="nav-link">NOSSA EQUIPE</a>
             </li>
             <li class="nav-item">
-              <a onclick="scrollToSection('scroll3')" class="nav-link">Endereço</a>
+              <a onclick="scrollToSection('scroll3')" class="nav-link">ENDEREÇO</a>
             </li>
             <li class="nav-item">
-              <a onclick="scrollToSection('scroll4')" class="nav-link">Nossos Serviços</a>
+              <a onclick="scrollToSection('scroll4')" class="nav-link">NOSSOS SERVIÇOS</a>
             </li>
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -85,18 +84,18 @@
   </div>
 
   <!-- COMEÇO DA PÁGINA -->
-
+<main>
   <div id="scroll1"></div>
-
-  <main>
     <section id="quemsomos">
       <div class="px-4 pt-5 my-5 text-center border-top border-bottom border-2">
-        <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+        <h1 class="display-4 fw-bold text-body-emphasis mb-3">Quem Somos</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <p class="lead mb-4">Seja muito bem-vindo à nossa empresa, referência em <b>otimização de negócios</b>.</p>
+          <p class="lead mb-4">Somos empenhados em simplificar e aprimorar a sua jornada empresarial. Especializados em sistemas de automatização, oferecemos soluções completas e práticas, incluindo venda de sistemas <b>SAT, NFe e CFe</b>, além de serviços de certificação digital para garantir a segurança das suas transações.</p>
+          <p class="lead mb-4">Nossa missão é clara: impulsionar o seu sucesso por meio de eficiência, confiabilidade e resultados tangíveis. Ao escolher nossa parceria, você está optando por simplificar processos, maximizar resultados e trilhar um caminho empresarial mais promissor.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3">Nossos Serviços</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contate-nos</button>
           </div>
         </div>
         <div class="overflow-hidden" style="max-height: 30vh;">
@@ -112,7 +111,7 @@
     <div id="scroll2"></div>
 
     <section id="nossaequipe" class="border-top border-bottom border-2">
-      <p class="ne">NOSSA EQUIPE</p>
+      <h1 id="ne" class="display-4 fw-bold text-body-emphasis mb-3">Nossa Equipe</h1>
 
       <div class="fileira1">
 
@@ -158,7 +157,7 @@
     <div id="scroll3"></div>
 
     <section id="localizacao" class="border-top border-bottom border-2">
-      <h1 class="nossoendereco">ENDEREÇO<br></h1>
+      <h1 class="display-4 fw-bold text-body-emphasis mb-3">Endereço<br></h1>
       <p class="rua"> 📌 R. Leopoldo Macedo, 349 -<br class="quebra">Ponte
         Alta, Aparecida - SP, 12570-000</p>
       <div class="mapBox">
@@ -197,7 +196,7 @@
 
     <!-- NOSSOS SERVIÇOS -->
     <div id="nossosServicos" class="  px-4 py-1 border-top border-bottom border-2">
-      <h2 class="pb-2">NOSSOS SERVIÇOS</h2>
+      <h2 class="display-4 fw-bold text-body-emphasis mb-3 pb-2">Nossos Serviços</h2>
   
       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
         <div class="col d-flex flex-column align-items-start gap-2">
@@ -255,17 +254,17 @@
       </div>
     </div>
 
-  </main>
+
 
   <div id="scroll5"></div>
 
 
   <section id="contato" class="border-top border-bottom border-2">
   <div id="interacao">
-    <h1>ENTRE EM CONTATO</h1>
+    <h1 class="display-4 fw-bold text-body-emphasis mb-3">Contato</h1>
     <p>📞 <span>TELEFONE:</span> (12) 3600-5110</p>
     <p>💻 <span>EMAIL:</span> viavalesistemas@outlook.com</p>
-    <p id="redes"> REDES SOCIAIS</p>
+    <h1 id="redes" class="display-4 fw-bold text-body-emphasis mb-3"> Redes Sociais</h1>
   </div>
 
   <div class="btn_social">
@@ -278,7 +277,7 @@
   </div>
 </section>
 
-<footer>
+
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023, Via Vale Sistemas</p>
@@ -287,15 +286,18 @@
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
       </a>
   
-      <ul class="nav col-md-4 justify-content-end">
+      <ul id="lifooter" class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a onclick="scrollToSection('scroll1')" class="nav-link px-2 text-body-secondary">Quem Somos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Nossa Equipe</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Endereço</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Serviços</a></li>
+        <li class="nav-item"><a onclick="scrollToSection('scroll2')" class="nav-link px-2 text-body-secondary">Nossa Equipe</a></li>
+        <li class="nav-item"><a onclick="scrollToSection('scroll3')" class="nav-link px-2 text-body-secondary">Endereço</a></li>
+        <li class="nav-item"><a onclick="scrollToSection('scroll4')" class="nav-link px-2 text-body-secondary">Serviços</a></li>
       </ul>
     </footer>
   </div>
-</footer>
+
+</main>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
